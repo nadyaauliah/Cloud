@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en"
+  ><head
+    ><title>Soft UI Pro</title
+    ><meta property="og:title" content="Soft UI Pro" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    /><meta charset="utf-8" /><meta
+      property="twitter:card"
+      content="summary_large_image"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-secondary-400);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+  </head>
+  <body
+    ><link rel="stylesheet" href="./style.css" /><div
+      ><link href="./index.css" rel="stylesheet" /><div class="home-container10"
+        ><header-wrapper class="header-wrapper"
+          ><!--Header component--><div data-role="Header" class="header-header"
+            ><nav class="header-nav"
+              ><div class="header-container1"
+                ><a href="index.html" class="header-navlink1 Large"
+                  >Soft UI Design System</a
+                ><div class="header-menu1"
+                  ><a href="index.html" class="header-navlink2 Large">Home</a
+                  ><a href="profile.html" class="header-navlink3 Large"
+                    >Profile</a
+                  ><a href="coming-soon.html" class="header-navlink4 Large"
+                    >Coming Soon</a
+                  ></div
+                ><div class="header-container2"
+                  ><div class="header-container3"
+                    ><primary-pink-button-wrapper
+                      class="primary-pink-button-wrapper"
+                      ><!--PrimaryPinkButton component--><div
+                        class="primary-pink-button-container"
+                        ><button
+                          class="primary-pink-button-button button ButtonSmall"
+                          ><span>buy now</span></button
+                        ></div
+                      ></primary-pink-button-wrapper
+                    ></div
+                  ><div data-role="BurgerMenu" class="header-burger-menu"
+                    ><svg viewBox="0 0 1024 1024" class="header-icon1">
+                      <path
+                        d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                      ></path></svg></div></div></div></nav
+            ><div data-role="MobileMenu" class="header-mobile-menu"
+              ><div class="header-top"
+                ><a href="index.html" class="header-navlink5 Large"
+                  >Soft UI Design System</a
+                ><div data-role="CloseMobileMenu" class="header-close-menu"
+                  ><svg viewBox="0 0 1024 1024" class="header-icon3">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path></svg></div></div
+              ><div class="header-mid"
+                ><div class="header-menu2"
+                  ><a href="index.html" class="header-navlink6 Large">Home</a
+                  ><a href="profile.html" class="header-navlink7 Large"
+                    >Profile</a
+                  ><a href="coming-soon.html" class="header-navlink8 Large"
+                    >Coming Soon</a
+                  ></div
+                ></div
+              ><div class="header-bot"
+                ><primary-pink-button-wrapper-shik
+                  class="primary-pink-button-wrapper-shik"
+                  ><!--PrimaryPinkButton component--><div
+                    class="primary-pink-button-container1"
+                    ><button
+                      class="primary-pink-button-button1 button ButtonSmall"
+                      ><span>buy now</span></button
+                    ></div
+                  ></primary-pink-button-wrapper-shik
+                ></div
+              ></div
+            ></div
+          ></header-wrapper
+        ><div class="home-hero"
+          ><div class="home-container11"
+            ><div class="home-card"
+              ><h1 class="home-text10 HeadingOne"
+                >Capture Your Travel Journey</h1
+              ><h1 class="home-text11 HeadingOne">relive your moments.</h1
+              ><span class="home-text12"
+                >Every place you visit, every moment you experience, holds a
+                story worth keeping. With our platform, turn your travels into a
+                timeless collection of memories — organized, personal, and
+                always within reach.</span
+              ><div class="home-container12"
+                ><div class="home-container13"
+                  ><primary-pink-button-wrapper-6r6v
+                    class="primary-pink-button-wrapper-6r6v"
+                    ><!--PrimaryPinkButton component--><div
+                      class="primary-pink-button-container2"
+                      ><button
+                        class="primary-pink-button-button2 button ButtonSmall"
+                        ><span>contact us</span></button
+                      ></div
+                    ></primary-pink-button-wrapper-6r6v
+                  ></div
+                ><outline-gray-button-wrapper
+                  class="outline-gray-button-wrapper"
+                  ><!--OutlineGrayButton component--><div
+                    class="outline-gray-button-container"
+                    ><button
+                      class="outline-gray-button-button button ButtonSmall"
+                      ><span>read more</span></button
+                    ></div
+                  ></outline-gray-button-wrapper
+                ></div
+              ><div class="home-container14"></div></div></div></div
+        ><img
+          alt="image"
+          src="public/curved6-1500h.jpg"
+          class="home-image1" /><section class="home-container15"
+          ><div class="home-container16"
+            ><h1 class="home-text13"
+              >Designed for Explorers, Built for Memories</h1
+            ><span class="home-text14"
+              >Made to help you plan, record, and remember every step of your
+              journey.</span
+            ></div
+          ><div class="home-container17"
+            ><div class="home-container18"
+              ><img
+                alt="image"
+                src="https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDExMnx8dHJhdmVsfGVufDB8fHx8MTc0NTYzOTc5MXww&amp;ixlib=rb-4.0.3&amp;w=1100"
+                class="home-image2" /><div class="home-container19"
+                ><img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1549894595-4698795b38ee?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDI5M3x8dHJhdmVsfGVufDB8fHx8MTc0NTYzOTkyMHww&amp;ixlib=rb-4.0.3&amp;w=1000"
+                  class="home-image3" /></div></div
+            ><div class="home-container20"
+              ><img
+                alt="image"
+                src="https://images.unsplash.com/photo-1523496922380-91d5afba98a3?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE3NXx8dHJhdmVsfGVufDB8fHx8MTc0NTYzOTg1NXww&amp;ixlib=rb-4.0.3&amp;w=1100"
+                class="home-image4"
+              /><div class="home-container21"
+                ><h3>🧭 How It All Comes Together</h3
+                ><p
+                  >Our platform is designed to be your ultimate travel
+                  companion, offering everything you need to plan, document, and
+                  cherish your adventures. From organizing your trips with
+                  detailed itineraries to tracking each destination you visit on
+                  an interactive map, this platform allows you to capture every
+                  step of your journey. With the ability to upload photos,
+                  videos, and personal reflections, you can create a rich travel
+                  journal that tells your unique story. Whether you're planning
+                  your next big adventure or reminiscing about past travels,
+                  you'll have all your memories in one place, neatly organized
+                  and easily accessible. Plus, with customizable features, you
+                  can share your journey with friends, family, or the world,
+                  making it a truly personal experience. Our goal is to make it
+                  easier for you to plan, enjoy, and preserve every special
+                  moment, no matter where your travels take you.
+                </p></div
+              ></div
+            ></div
+          ></section
+        ><features3-wrapper
+          class="features3-wrapper"
+          rootclassname="features3undefined"
+          ><!--Features3 component--><div
+            class="features3-layout253 thq-section-padding features3root-class-name"
+            ><div class="features3-max-width thq-section-max-width thq-flex-row"
+              ><div class="features3-section-title thq-flex-column"
+                ><div class="features3-content1 thq-flex-column"
+                  ><h2 class="thq-heading-2"
+                    ><fragment class="home-fragment12"
+                      ><span class="home-text19"
+                        >Explore Our Features</span
+                      ></fragment
+                    ></h2
+                  ><p class="thq-body-large"
+                    ><fragment class="home-fragment13"
+                      ><span class="home-text20"
+                        >Discover the powerful features that our platform offers
+                        to enhance your travel journey planning and social
+                        conversations insights.</span
+                      ></fragment
+                    ></p
+                  ></div
+                ><div class="thq-flex-row features3-actions"
+                  ><button class="thq-button-filled features3-button1"
+                    ><span class="thq-body-small"
+                      ><fragment class="home-fragment19"
+                        ><span class="home-text28"
+                          >Start Planning Now</span
+                        ></fragment
+                      ></span
+                    ></button
+                  ><button class="thq-button-outline features3-button2"
+                    ><span class="thq-body-small"
+                      ><fragment class="home-fragment16"
+                        ><span class="home-text23">Learn More</span></fragment
+                      ></span
+                    ></button
+                  ></div
+                ></div
+              ><div class="features3-content2 thq-flex-column"
+                ><div class="thq-flex-row features3-list1"
+                  ><div class="features3-list-item1 thq-flex-column"
+                    ><img
+                      alt="Soft UI Design System Image"
+                      src="https:/images.unsplash.com/photo-1502003148287-a82ef80a6abc?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDM4fHx0cmF2ZWx8ZW58MHx8fHwxNzQ1NjM5NjY1fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                      class="thq-img-round thq-img-ratio-1-1"
+                    /><div class="features3-content3 thq-flex-column"
+                      ><h3 class="features3-title11 thq-heading-3"
+                        ><fragment class="home-fragment11"
+                          ><span class="home-text18"
+                            >Travel Log / Journal</span
+                          ></fragment
+                        ></h3
+                      ><span class="features3-description11 thq-body-small"
+                        ><fragment class="home-fragment10"
+                          ><span class="home-text17"
+                            >Write and keep your travel stories all in one
+                            personal space.</span
+                          ></fragment
+                        ></span
+                      ></div
+                    ></div
+                  ><div class="thq-flex-column"
+                    ><img
+                      alt="Travel Journey Planning Tools Image"
+                      src="https:/images.unsplash.com/photo-1545424920-b978eefcde48?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEzfHxnbG9iZXxlbnwwfHx8fDE3NDU2NDA5ODN8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                      class="thq-img-round thq-img-ratio-1-1"
+                    /><div class="features3-content4 thq-flex-column"
+                      ><h3 class="features3-title12 thq-heading-3"
+                        ><fragment class="home-fragment15"
+                          ><span class="home-text22"
+                            >Interactive Map</span
+                          ></fragment
+                        ></h3
+                      ><span class="features3-description12 thq-body-small"
+                        ><fragment class="home-fragment17"
+                          ><span class="home-text24"
+                            >View all the places you’ve visited on a dynamic
+                            world map.</span
+                          ></fragment
+                        ></span
+                      ></div
+                    ></div
+                  ></div
+                ><div class="features3-list2 thq-flex-row"
+                  ><div class="thq-flex-column"
+                    ><img
+                      alt="Memories Capturing Functionality Image"
+                      src="https:/images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fHBob3RvJTIwZ2FsbGVyeXxlbnwwfHx8fDE3NDU2NDEwNDF8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                      class="thq-img-round thq-img-ratio-1-1"
+                    /><div class="features3-content5 thq-flex-column"
+                      ><h3 class="features3-title13 thq-heading-3"
+                        ><fragment class="home-fragment14"
+                          ><span class="home-text21"
+                            >Photo &amp; Media Gallery</span
+                          ></fragment
+                        ></h3
+                      ><span class="features3-description13 thq-body-small"
+                        ><fragment class="home-fragment21"
+                          ><span class="home-text30"
+                            >Save and showcase your best moments with photos and
+                            videos.</span
+                          ></fragment
+                        ></span
+                      ></div
+                    ></div
+                  ><div class="thq-flex-column"
+                    ><img
+                      alt="Social Conversations Insights Image"
+                      src="https:/images.unsplash.com/photo-1504150558240-0b4fd8946624?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDZ8fHBsYW5lfGVufDB8fHx8MTc0NTY0MTA4Mnww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                      class="thq-img-round thq-img-ratio-1-1" /><div
+                      class="features3-content6 thq-flex-column"
+                      ><h3 class="features3-title14 thq-heading-3"
+                        ><fragment class="home-fragment20"
+                          ><span class="home-text29"
+                            >Itinerary Builder</span
+                          ></fragment
+                        ></h3
+                      ><span class="features3-description14 thq-body-small"
+                        ><fragment class="home-fragment18"
+                          ><span class="home-text25"
+                            ><span
+                              >Plan every detail of your trip with schedules and
+                              checklists.</span
+                            ><br /></span></fragment></span></div></div></div></div></div></div></features3-wrapper
+        ><gallery13-wrapper class="gallery13-wrapper"
+          ><!--Gallery13 component--><div
+            class="gallery13-gallery3 thq-section-padding"
+            ><div class="gallery13-max-width thq-section-max-width"
+              ><div class="gallery13-section-title"></div
+              ><div class="gallery13-content"
+                ><div class="gallery13-container1"
+                  ><img
+                    alt="Mountain Adventure"
+                    src="https:/images.unsplash.com/photo-1529852766667-d93fae7b267c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTc3MHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="gallery13-image1 thq-img-ratio-4-3"
+                  /><span class="thq-body-small"
+                    ><fragment class="home-fragment23"
+                      ><span class="home-text32">&nbsp; </span></fragment
+                    ></span
+                  ></div
+                ><div class="gallery13-container2"
+                  ><img
+                    alt="Sunset at the Beach"
+                    src="https:/images.unsplash.com/photo-1504609773096-104ff2c73ba4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTc3MXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="gallery13-image2 thq-img-ratio-4-3"
+                  /><span class="thq-body-small"
+                    ><fragment class="home-fragment24"
+                      ><span class="home-text33">&nbsp;&nbsp; </span></fragment
+                    ></span
+                  ></div
+                ><div class="gallery13-container3"
+                  ><img
+                    alt="Cityscape Exploration"
+                    src="https:/images.unsplash.com/photo-1524661135-423995f22d0b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTc3MHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                    class="gallery13-image3 thq-img-ratio-4-3"
+                  /><span class="thq-body-small"
+                    ><fragment class="home-fragment22"
+                      ><span class="home-text31">&nbsp;&nbsp; </span></fragment
+                    ></span
+                  ></div
+                ></div
+              ></div
+            ></div
+          ></gallery13-wrapper
+        ><testimonial9-wrapper
+          class="testimonial9-wrapper"
+          rootclassname="testimonial9undefined"
+          ><!--Testimonial9 component--><div
+            class="thq-section-padding testimonial9root-class-name"
+            ><div class="testimonial9-max-width thq-section-padding"
+              ><div class="testimonial9-section-title"
+                ><h2 class="testimonial9-title thq-heading-2"
+                  ><fragment class="home-fragment34"
+                    ><span class="home-text43">Our Happy Users</span></fragment
+                  ></h2
+                ><p class="testimonial9-subtitle thq-body-large"
+                  ><fragment class="home-fragment29"
+                    ><span class="home-text38"
+                      >See what our users have to say about their experience
+                      with our Soft UI Design System for travel journey
+                      planning, social conversations insights, and memories
+                      capturing.</span
+                    ></fragment
+                  ></p
+                ></div
+              ><div
+                data-thq="slider"
+                data-navigation="true"
+                data-pagination="true"
+                class="testimonial9-slider1 swiper"
+                ><div data-thq="slider-wrapper" class="swiper-wrapper"
+                  ><div
+                    data-thq="slider-slide"
+                    class="testimonial9-slider-slide1 swiper-slide"
+                    ><div class="testimonial9-column1 thq-card"
+                      ><div class="testimonial9-stars1"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text10 thq-body-small"
+                        ><fragment class="home-fragment28"
+                          ><span class="home-text37"
+                            >I love how easy it is to plan my trips and store
+                            memories using this platform. The interface is so
+                            visually appealing!</span
+                          ></fragment
+                        ></span
+                      ><div class="testimonial9-avatar1"
+                        ><img
+                          alt="Image of Sarah Johnson"
+                          src="https:/images.unsplash.com/photo-1515027037286-7da2d06130cf?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1N3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image1 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content1"
+                          ><span class="testimonial9-text11 thq-body-small"
+                            ><fragment class="home-fragment32"
+                              ><span class="home-text41"
+                                >Sarah Johnson</span
+                              ></fragment
+                            ></span
+                          ><span class="testimonial9-text12 thq-body-small"
+                            ><fragment class="home-fragment33"
+                              ><span class="home-text42"
+                                >Travel Enthusiast</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ><div class="testimonial9-column2 thq-card"
+                      ><div class="testimonial9-stars2"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text13 thq-body-small"
+                        ><fragment class="home-fragment25"
+                          ><span class="home-text34"
+                            >As a social media manager, the social conversations
+                            insights provided by this platform are invaluable.
+                            It helps me understand trends and engage with our
+                            audience effectively.</span
+                          ></fragment
+                        ></span
+                      ><div class="testimonial9-avatar2"
+                        ><img
+                          alt="Image of Michael Smith"
+                          src="https:/images.unsplash.com/photo-1527203561188-dae1bc1a417f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1N3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image2 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content2"
+                          ><span class="testimonial9-text14 thq-body-small"
+                            ><fragment class="home-fragment27"
+                              ><span class="home-text36"
+                                >Michael Smith</span
+                              ></fragment
+                            ></span
+                          ><span class="testimonial9-text15 thq-body-small"
+                            ><fragment class="home-fragment30"
+                              ><span class="home-text39"
+                                >Social Media Manager</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ></div
+                  ><div
+                    data-thq="slider-slide"
+                    class="testimonial9-slider-slide2 swiper-slide"
+                    ><div class="testimonial9-column3 thq-card"
+                      ><div class="testimonial9-stars3"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text16 thq-body-small"
+                        ><fragment class="home-fragment36"
+                          ><span class="home-text45"
+                            >Capturing travel moments has never been easier! I
+                            can relive my adventures through the memories stored
+                            on this platform.</span
+                          ></fragment
+                        ></span
+                      ><div class="testimonial9-avatar3"
+                        ><img
+                          alt="Image of Emily Brown"
+                          src="https:/images.unsplash.com/photo-1599901254473-defc556377fc?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1OHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image3 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content3"
+                          ><span class="testimonial9-text17 thq-body-small"
+                            ><fragment class="home-fragment37"
+                              ><span class="home-text46"
+                                >Emily Brown</span
+                              ></fragment
+                            ></span
+                          ><span class="testimonial9-text18 thq-body-small"
+                            ><fragment class="home-fragment35"
+                              ><span class="home-text44"
+                                >Adventure Seeker</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ><div class="testimonial9-column4 thq-card"
+                      ><div class="testimonial9-stars4"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text19 thq-body-small"
+                        ><fragment class="home-fragment31"
+                          ><span class="home-text40"
+                            >The social insights data available here is a
+                            goldmine for analyzing conversations and trends.
+                            It's a must-have tool for any data-driven
+                            professional.</span
+                          ></fragment
+                        ></span
+                      ><div class="testimonial9-avatar4"
+                        ><img
+                          alt="Image of David Wilson"
+                          src="https:/images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1OHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image4 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content4"
+                          ><span class="testimonial9-text20 thq-body-small"
+                            ><fragment class="home-fragment38"
+                              ><span class="home-text47"
+                                >David Wilson</span
+                              ></fragment
+                            ></span
+                          ><span class="testimonial9-text21 thq-body-small"
+                            ><fragment class="home-fragment26"
+                              ><span class="home-text35"
+                                >Data Analyst</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ></div
+                  ></div
+                ><div
+                  data-thq="slider-pagination"
+                  class="testimonial9-slider-pagination1 swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                  ><div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  ></div
+                  ><div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet"
+                  ></div></div
+                ><div
+                  data-thq="slider-button-prev"
+                  class="swiper-button-prev"
+                ></div
+                ><div
+                  data-thq="slider-button-next"
+                  class="swiper-button-next"
+                ></div></div
+              ><div
+                data-thq="slider"
+                data-navigation="true"
+                data-pagination="true"
+                class="testimonial9-slider2 swiper"
+                ><div data-thq="slider-wrapper" class="swiper-wrapper"
+                  ><div
+                    data-thq="slider-slide"
+                    class="testimonial9-slider-slide3 swiper-slide"
+                    ><div class="testimonial9-column5"
+                      ><div class="testimonial9-stars5"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text22 thq-body-small"
+                        >"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis cursus, mi quis viverra ornare."</span
+                      ><div class="testimonial9-avatar5"
+                        ><img
+                          alt="Image of Sarah Johnson"
+                          src="https:/images.unsplash.com/photo-1515027037286-7da2d06130cf?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1N3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image5 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content5"
+                          ><span class="testimonial9-text23 thq-body-small"
+                            ><span>Author Name</span
+                            ><fragment class="home-fragment32"
+                              ><span class="home-text41"
+                                >Sarah Johnson</span
+                              ></fragment
+                            ></span
+                          ><span class="testimonial9-text25 thq-body-small"
+                            ><span>Position, Company name</span
+                            ><fragment class="home-fragment33"
+                              ><span class="home-text42"
+                                >Travel Enthusiast</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ></div
+                  ><div
+                    data-thq="slider-slide"
+                    class="testimonial9-slider-slide4 swiper-slide"
+                    ><div class="testimonial9-column6"
+                      ><div class="testimonial9-stars6"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text27 thq-body-small"
+                        >"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis cursus, mi quis viverra ornare."</span
+                      ><div class="testimonial9-avatar6"
+                        ><img
+                          alt="Image of Michael Smith"
+                          src="https:/images.unsplash.com/photo-1527203561188-dae1bc1a417f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1N3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image6 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content6"
+                          ><span class="testimonial9-text28 thq-body-small"
+                            >Author Name</span
+                          ><span class="testimonial9-text29 thq-body-small"
+                            ><span>Position, Company name</span
+                            ><fragment class="home-fragment30"
+                              ><span class="home-text39"
+                                >Social Media Manager</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ></div
+                  ><div
+                    data-thq="slider-slide"
+                    class="testimonial9-slider-slide5 swiper-slide"
+                    ><div class="testimonial9-column7"
+                      ><div class="testimonial9-stars7"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text31 thq-body-small"
+                        >"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis cursus, mi quis viverra ornare."</span
+                      ><div class="testimonial9-avatar7"
+                        ><img
+                          alt="Image of Emily Brown"
+                          src="https:/images.unsplash.com/photo-1599901254473-defc556377fc?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1OHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image7 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content7"
+                          ><span class="testimonial9-text32 thq-body-small"
+                            >Author Name</span
+                          ><span class="testimonial9-text33 thq-body-small"
+                            >Position, Company name</span
+                          ></div
+                        ></div
+                      ></div
+                    ></div
+                  ><div
+                    data-thq="slider-slide"
+                    class="testimonial9-slider-slide6 swiper-slide"
+                    ><div class="testimonial9-column8"
+                      ><div class="testimonial9-stars8"
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg
+                        ><svg viewBox="0 0 1024 1024" class="thq-icon-small">
+                          <path
+                            d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                          ></path></svg></div
+                      ><span class="testimonial9-text34 thq-body-small"
+                        >"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis cursus, mi quis viverra ornare."</span
+                      ><div class="testimonial9-avatar8"
+                        ><img
+                          alt="Image of David Wilson"
+                          src="https:/images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0NTY0MTI1OHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                          class="testimonial9-avatar-image8 thq-img-round thq-img-ratio-1-1"
+                        /><div class="testimonial9-avatar-content8"
+                          ><span class="testimonial9-text35 thq-body-small"
+                            ><span>Author Name</span
+                            ><fragment class="home-fragment38"
+                              ><span class="home-text47"
+                                >David Wilson</span
+                              ></fragment
+                            ></span
+                          ><span class="testimonial9-text37 thq-body-small"
+                            ><span>Position, Company name</span
+                            ><fragment class="home-fragment26"
+                              ><span class="home-text35"
+                                >Data Analyst</span
+                              ></fragment
+                            ></span
+                          ></div
+                        ></div
+                      ></div
+                    ></div
+                  ></div
+                ><div
+                  data-thq="slider-pagination"
+                  class="testimonial9-slider-pagination2 swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                  ><div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  ></div
+                  ><div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet"
+                  ></div
+                  ><div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet"
+                  ></div
+                  ><div
+                    data-thq="slider-pagination-bullet"
+                    class="swiper-pagination-bullet"
+                  ></div></div
+                ><div
+                  data-thq="slider-button-prev"
+                  class="swiper-button-prev"
+                ></div
+                ><div
+                  data-thq="slider-button-next"
+                  class="swiper-button-next"
+                ></div></div></div></div></testimonial9-wrapper
+        ><section class="home-testimonials"
+          ><img
+            alt="image"
+            src="public/bottom.svg"
+            class="home-bottom-wave-image" /><img
+            alt="image"
+            src="public/waves-white.svg"
+            class="home-image5" /><img
+            alt="image"
+            src="public/top.svg"
+            class="home-top-wave-image" /></section
+        ><footer-wrapper class="footer-wrapper"
+          ><!--Footer component--><footer class="footer-footer"
+            ><div class="footer-container1"
+              ><div class="footer-container2"
+                ><span class="footer-text10">SOFT</span
+                ><span>Copyright © 2021 Soft by Creative Tim.</span></div
+              ><div class="footer-container3"
+                ><div class="footer-container4"
+                  ><span class="footer-text12 Large">Company</span
+                  ><span class="footer-text13 Large">About Us</span
+                  ><span class="footer-text14 Large">Careers</span
+                  ><span class="footer-text15 Large">Press</span></div
+                ><div class="footer-container5"
+                  ><span class="footer-text16 Large">Pages</span
+                  ><span class="footer-text17 Large">Login</span
+                  ><span class="footer-text18 Large">Register</span
+                  ><span class="footer-text19 Large">About</span></div
+                ><div class="footer-container6"
+                  ><span class="footer-text20 Large">Products</span
+                  ><span class="footer-text21 Large">Free</span
+                  ><span class="footer-text22 Large">PRO</span
+                  ><span class="footer-text23 Large">Latest</span></div
+                ></div
+              ></div
+            ><img
+              alt="image"
+              src="public/waves-white.svg"
+              class="footer-image" /></footer></footer-wrapper></div
+    ></div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script></body
+></html>
